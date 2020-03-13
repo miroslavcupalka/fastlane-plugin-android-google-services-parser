@@ -1,0 +1,20 @@
+before_all do |lane|
+
+end
+
+lane :test do |options|
+  puts "==== LANE TEST ======="
+
+  googleServiceFilePath = ("/google-services.json")
+  puts "googleServiceFilePath: #{googleServiceFilePath}"
+
+  # firebase_app_id = get_google_services_json_app_id(google_services_file: File.absolute_path("../app/src/main/google-services.json"), package_name: "com.example.android")
+  # puts "Firebase App ID: #{firebase_app_id}"
+
+  firebase_app_id = get_google_services_json_app_id(google_services_file: File.absolute_path("google-services.json"))
+  puts "Firebase App ID without specific package name: #{firebase_app_id}"
+
+  puts "TEST - #{ENV["GOOGLE_SERVICES_APP_ID"]}"
+
+  puts "==== AFTER TEST ======="
+end
