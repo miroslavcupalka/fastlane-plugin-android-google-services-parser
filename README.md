@@ -1,4 +1,4 @@
-# google.services.json parser plugin
+# Fastlane plugin for parse google.services.json
 
 [![Build Status](https://travis-ci.org/beplus/fastlane-plugin-android-google-services-parser.svg?branch=master)](https://travis-ci.org/beplus/fastlane-plugin-android_google_services_parser)
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-android_google_services_parser)
